@@ -1,0 +1,19 @@
+@import './mixins';
+
+// colors
+
+$dark: #0A1F38;
+$grey: #9DA5AF;
+
+$greenLigth: #B1C909;
+$green: #A5BB0C;
+$greenMiddle: #97AB0D;
+$greenDarl: #819400;
+$backgroundColor: $dark;
+$baseColor: #FFFFFF;
+$transitionActions: .15s;
+$scaleActions: scale(1.02);
+
+$borderRadius: 3.2rem;
+
+$paddingInline: 16rem;

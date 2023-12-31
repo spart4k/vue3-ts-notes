@@ -1,0 +1,5 @@
+.button {
+  @include textNormal;
+  @include buttonWrap;
+  padding: 1.2rem 2.4rem;
+}

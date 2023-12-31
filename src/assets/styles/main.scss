@@ -1,0 +1,79 @@
+@import './_variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+$desktopWidth: 1920px;
+$mobileWidth: 768px;
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  font-size: 10px;
+  height: -webkit-fill-available;
+  font-family: 'Montserrat';
+}
+
+// html {
+//   font-family: 'Montserrat', sans-serif;
+//   height: 100%;
+//   font-size: 10px;
+//   height: -webkit-fill-available;
+//   font-family: 'Montserrat';
+//   @media (min-width: $desktopWidth) {
+//     font-size: 13.33333333248px;
+//   }
+//   @media (max-width: $desktopWidth) {
+//     font-size: calc((10 / 1920) * 100vw);
+//   }
+//   // @media (max-width: $tabletWidth) {
+//   //   font-size: calc((10 / 900) * 100vw);
+//   // }
+//   @media (max-width: $mobileWidth) {
+//     font-size: calc((10 / 390) * 100vw);
+//   }
+//   &::-webkit-scrollbar {
+//     display: none;
+//   }
+//   &.noScroll {
+//     position: fixed;
+//     overflow: hidden;
+//     height: 100%;
+//     width: 100%;
+//     left: 0;
+//     top: 0;
+//   }
+// }
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%
+}
+
+#app {
+  height: 100%;
+} 
+
+.heading-h1 {
+  @include headingH1;
+}
+.heading-h2 {
+  @include headingH2;
+}
+
+.heading-h3 {
+  @include headingH3;
+}
+
+.heading-h4 {
+  @include headingH4;
+}
+
+.container {
+  padding-inline: $paddingInline;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}

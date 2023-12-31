@@ -1,10 +1,8 @@
 import { defineComponent } from "vue"
 
-import Header from '@/components/@logic/Header/default/index.vue'
 export default defineComponent({
-  name: 'Layot-Default',
+  name: 'Button-Default',
   components: {
-    Header
   },
   setup() {
     return {
