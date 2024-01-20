@@ -1,14 +1,22 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import Home from '@/views/Home/default/index.vue'
-
+// import Home from '@/views/Home/default/index.vue'
+import Notes from '@/views/Home/default/index.vue'
+import Detail from '@/components/@logic/Detail/default/index.vue'
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
-    name: 'Home',
+    path: '/notes',
+    name: 'Home1',
     meta: {
       layout: 'DefaultLayout'
     },
-    component: Home,
+    component: Notes,
+    children: [
+      {
+        name: 'Note',
+        path: ':id',
+        component: Detail,
+      }
+    ]
   },
 ]
 

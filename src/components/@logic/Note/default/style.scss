@@ -1,0 +1,19 @@
+.note {
+  font-size: 2.8rem;
+  width: $noteWidth;
+  padding: 1rem;
+  &-label {
+    @include headingH4;
+  }
+  &-content {
+    @include textNormal;
+  }
+  &-date {
+    @include textNormal;
+  }
+  &:not(:last-child) {
+    // margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    border-bottom: .1rem solid rgba($baseColor, .2);
+  }
+}

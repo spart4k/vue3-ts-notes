@@ -34,7 +34,7 @@
 
 @mixin headingH4 {
   color: $baseColor;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -42,6 +42,6 @@
 
 @mixin textNormal {
   color: $baseColor;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
